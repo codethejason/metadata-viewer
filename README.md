@@ -9,4 +9,7 @@ Application takes in multiple files and displays the name, size, type and last m
 4. View Metadata
 
 ##To Add:
--CSS Styling
+-Transfer Dates to Readable Format
+-Titles for each span
+-Make upload button look nicer
+-Clear files div after user requests more files

@@ -8,16 +8,17 @@
 </head>
 
 <body>
+    <h1>Metadata Viewer</h1>
     <input id="input" name="filesInput" type="file" multiple>
     <div id="content">
-        <div id="basicInfo"></div>
+        <span id="basicInfo"></span>
         <div id="files">
             <template id="fileTemplate">
                 <div class="file">
-                    <div class="name"></div>
-                    <div class="size"></div>
-                    <div class="type"></div>
-                    <div class="date"></div>
+                    <span class="name"></span>
+                    <span class="size"></span>
+                    <span class="type"></span>
+                    <span class="date"></span>
                 </div>
             </template>
         </div>

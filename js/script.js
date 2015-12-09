@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
             tmpl.querySelector('.name').innerHTML = files[counter].name;
             tmpl.querySelector('.size').innerHTML = files[counter].size;
             tmpl.querySelector('.type').innerHTML = files[counter].type;
-            tmpl.querySelector('.date').innerHTML = files[counter].lastModifiedDate;
+            tmpl.querySelector('.date').innerHTML = files[counter].lastModified;
             //append the file div
             filesDiv.appendChild(tmpl);
         }
