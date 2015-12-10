@@ -9,19 +9,20 @@
 
 <body>
     <h1>Metadata Viewer</h1>
-    <input id="input" name="filesInput" type="file" multiple>
     <div id="content">
-        <span id="basicInfo"></span>
-        <div id="files">
-            <template id="fileTemplate">
-                <div class="file">
-                    <span class="name"></span>
-                    <span class="size"></span>
-                    <span class="type"></span>
-                    <span class="date"></span>
-                </div>
-            </template>
+        <div class="upload">
+            <input id="input" name="filesInput" type="file" multiple>
+            <span id="basicInfo"></span>
         </div>
+        <template id="fileTemplate">
+            <div class="file">
+                <span class="name"></span>
+                <span class="size"></span>
+                <span class="type"></span>
+                <span class="date"></span>
+            </div>
+        </template>
+        <div id="files"></div>
     </div>
 </body>
 </html>
