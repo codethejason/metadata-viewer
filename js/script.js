@@ -20,7 +20,11 @@ document.addEventListener('DOMContentLoaded', function(){
         //set files json equal to the files uploaded
         var files = input.files;        
         //display number of files
-        basicInfo.innerHTML = "You have just uploaded " + files.length + " file(s)."; 
+        if (files.length <= 1){
+            basicInfo.innerHTML = "You have just uploaded " + files.length + " file."; 
+        } else {
+            basicInfo.innerHTML = "You have just uploaded " + files.length + " files."; 
+        }
         for(var counter = 0; counter < files.length; counter++) {
             //clone the template inside content into a new div element
             var tmpl = template.content.cloneNode(true);
